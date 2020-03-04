@@ -8,7 +8,8 @@ class Korod:
 	def __init__(self, usbport='/dev/ttyUSB0'):
 		self.ser = serial.Serial(usbport, 9600)
 		if(self.ser.isOpen()):
-			print "Opened serial comms with Korod"
+                        pass
+			#print "Opened serial comms with Korod"
 
 		else:
 			print "Was unable to open serial comms with Korod"
